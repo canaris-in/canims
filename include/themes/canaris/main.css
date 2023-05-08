@@ -16,17 +16,50 @@
 @import url("bootstrap.css");
 @import url('roboto.css');
 
+.loginBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 120, 215);
+    flex-direction: row;
+}
+
+.loginCenter{
+background: white;
+    padding: 3em;
+    border-radius: 20px;
+    width: 40%;
+}
+.tagLogo{
+width: 50%;
+}
+.brandName{
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.logoContainer{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid white;
+    margin-right: 4em;
+    height: 20em;
+}
+
 body, table, tr, td, textarea {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family:Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 12px;
 	-ms-overflow-style: scrollbar;
 }
 
 body {
 	margin: 0px;
-	background-color: white;
+	background-color: snow;
 	background-repeat: repeat-y;
 	overflow: hidden;
+        
 }
 
 textarea {
@@ -48,7 +81,7 @@ table {
 }
 
 td, th {
-	padding: 0px;
+	padding: 5px;
 	margin: 0px;
 }
 
@@ -742,6 +775,9 @@ label {
 	height: 100%;
 	float: left;
 }
+.cactiConsoleNavigationArea table{
+    background: #0078d7;
+}
 
 .actionsDropdown {
 	vertical-align: middle;
@@ -884,7 +920,7 @@ legend {
 	padding-top: 5px;
 	float: right;
 	margin-top: -18px;
-	color: white;
+	color: black;
 }
 
 .treeTable {
@@ -1902,7 +1938,7 @@ tr.selected a {
 }
 
 #nav li ul li a {
-	padding: 2px 4px 2px 35px;
+	padding: 1em;
 	background: #f0f0f0;
 }
 

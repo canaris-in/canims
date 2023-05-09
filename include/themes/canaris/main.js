@@ -84,14 +84,8 @@ function themeReady() {
 
 		$('<div class="dropdownMenu">'
 			+'<ul id="submenu-user-help" class="submenuoptions right" style="display:none;">'
-				+'<li><a href="https://www.cacti.net" target="_blank"><span>'+cactiHome+'</span></a></li>'
-				+'<li><a href="https://github.com/cacti" target="_blank"><span>'+cactiProjectPage+'</span></a></li>'
-				+'<li><hr class="menu"></li>'
-				+'<li><a href="https://forums.cacti.net/" target="_blank"><span>'+cactiCommunityForum+'</span></a></li>'
-				+'<li><a href="https://github.com/Cacti/documentation/blob/develop/README.md" target="_blank"><span>'+cactiDocumentation+'</span></a></li>'
-				+'<li><hr class="menu"></li>'
-				+'<li><a href="https://github.com/Cacti/cacti/issues/new" target="_blank"><span>'+reportABug+'</span></a></li>'
-				+'<li><a href="'+urlPath+'about.php"><span>'+aboutCacti+'</span></a></li>'
+				+'<li><a href="https://support.canaris.in/hc/1138629519/category/4" target="_blank"><span>Help</span></a></li>'
+				+'<li><a href="'+urlPath+'about.php"><span>About Canims</span></a></li>'
 			+'</ul>'
 		+'</div>').appendTo('body');
 	}

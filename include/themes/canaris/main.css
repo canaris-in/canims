@@ -50,7 +50,7 @@ display: flex;
 
 body, table, tr, td, textarea {
 	font-family:Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	-ms-overflow-style: scrollbar;
 }
 
@@ -81,7 +81,7 @@ table {
 }
 
 td, th {
-	padding: 5px;
+	padding: 0px;
 	margin: 0px;
 }
 
@@ -470,7 +470,7 @@ label {
 .submenuoptions {
 	background: white;
 	border-width: 0px 3px 3px 3px;
-	border-color: rgba(0,0,0,0.7);
+	border-color: #007bff;
 	border-style: solid;
 	position: absolute;
 	top: 45px;
@@ -491,7 +491,8 @@ label {
 
 .submenuoptions li a:hover {
 	display: block;
-	background: rgba(0,119,0,0.3);;
+	background: #000080;
+	color: snow;
 }
 
 .menuoptions {
@@ -594,7 +595,7 @@ label {
 }
 
 .even {
-	background: none repeat scroll 0 0 #0078d7;
+	background: none repeat scroll 0 0 #e1edf7;
 	border: none;
 }
 
@@ -739,7 +740,9 @@ label {
 	margin-right: 0px;
 	height: 100%;
 	float: left;
-	display: none;
+	display: block;
+	padding-right: 16em;
+	
 }
 
 .cactiTreeNavigationArea a {
@@ -986,7 +989,7 @@ legend {
 }
 
 .linkEditMain, .linkEditMain:visited, .linkEditMain:active {
-	color: #0078d7;
+	color: #000000;
 	text-decoration: none;
 	font-size: 12px;
 	white-space: nowrap;
@@ -1266,6 +1269,7 @@ legend {
 	text-align: left;
 	font-weight: bold;
 	padding-left: 3px;
+	letter-spacing: 1px;
 }
 
 .formFieldDescription {
@@ -1285,13 +1289,16 @@ legend {
 	width: 100%;
 	text-align: left;
 	line-height: 25px;
-	background: rgba(0, 119, 0, 0.55) none repeat scroll 0 0;
+	background: #0078d7 none repeat scroll 0 0;
 	color: white;
 	font-weight: bold;
+	border-bottom: 1px solid #8a9ff5;
 }
 
 .formHeaderText {
 	padding-left: 3px;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 .formHeaderAnchor {
@@ -1802,10 +1809,12 @@ div.submenu span {
 	border-color: #eee #ccc #ccc #eee;
 	color: #333;
 	float: left !important;
-	padding: 5px 8px;
+	padding: 8px 15px;
 	text-decoration: none;
-	font-size: 11px;
+	font-size: 14px;
 	vertical-align: bottom;
+	height: 100%;
+	margin: 3px;
 }
 
 .tabs a:hover {
@@ -1820,11 +1829,11 @@ div.submenu span {
 .tabs nav a.selected {
 	color: white;
 	border-bottom: 1px solid rgba(162,117,63,0.8);
-	background: rgba(117,162,63,0.8);
+	background: #000080;
 }
 
 .tabs li {
-	bottom: -1px;
+	bottom: -5px;
 	float: left;
 	margin: 0 3px 0 0;
 	position: relative;
@@ -1848,7 +1857,7 @@ div.submenu span {
 	clear: both;
 	content: ".";
 	display: block;
-	height: 0;
+	height: 100%;
 	visibility: hidden;
 }
 
@@ -1892,12 +1901,12 @@ th:last-child {
 }
 
 tr.selected {
-	color: white;
-	background: #0078d7;
+	/* color: white;
+	background: #0078d7; */
 }
 
 tr.selected a.linkEditMain:visited {
-	color: yellow;
+	color: black;
 }
 
 tr:not(.selectable) a.linkEditMain:hover {
@@ -1905,7 +1914,7 @@ tr:not(.selectable) a.linkEditMain:hover {
 }
 
 tr.selectable a.linkEditMain:hover {
-	color: yellow;
+	color: black;
 }
 
 tr.selectable:hover:not(.selected) {
@@ -1917,11 +1926,11 @@ tr.selectable td {
 }
 
 tr.selected a {
-	color: yellow;
+	color: black;
 }
 
 #nav li a.pic:hover:not(.selected), #nav li a.menu_parent:hover:not(.selected) {
-	background: #0078d7;
+	background: #000080;
 	color: white;
 }
 
@@ -1930,6 +1939,9 @@ tr.selected a {
 	background: #0078d7;
 	padding: 1em;
 	border-bottom: 1px solid cadetblue;
+}
+#nav li a.selected{
+	background-color: #000080;
 }
 
 #nav li ul {
@@ -2121,7 +2133,7 @@ tr#realtime td:first-child {
 }
 
 #graph_view_tree_content2_child > tbody > .tableHeader {
-	background: rgba(0,0,0,0.9);
+	background: #0078d7;
 }
 
 .menuitem {
@@ -2145,10 +2157,10 @@ tr#realtime td:first-child {
 }
 
 .ui-select-text input {
-	width: 180px;
-	margin: 0;
-	padding: 0;
-	background: transparent;
+	width: 172px;
+    margin: -6px;
+    padding: 5px;
+    background: transparent;
 }
 
 .ui-multiselect {
@@ -2171,8 +2183,9 @@ tr#realtime td:first-child {
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
 	color: white;
-	background: rgba(0,119,0,0.9);
+	background: #000080;
 }
+
 
 /* New Checkbox Stuff */
 .checkboxSwitch {
@@ -2196,7 +2209,7 @@ tr#realtime td:first-child {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 59, 0, 0.55);
+	background-color: gray;
 	-webkit-transition: .4s;
 	transition: .4s;
 }

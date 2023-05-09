@@ -74,7 +74,7 @@ $poller_id = 1;
  * would be set to `/cacti/`.
  */
 
-$url_path = '/cacti/';
+$url_path = '/nms/';
 
 /*
  * Default session name - session name must contain alpha characters

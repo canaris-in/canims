@@ -28,7 +28,7 @@
 background: white;
     padding: 3em;
     border-radius: 20px;
-    width: 40%;
+    width: 46%;
 }
 .tagLogo{
 width: 50%;
@@ -39,7 +39,7 @@ width: 50%;
     text-align: center;
 }
 .logoContainer{
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -498,7 +498,7 @@ label {
 .menuoptions {
 	background: white;
 	border-width: 0px 3px 3px 3px;
-	border-color: rgba(0,0,0,0.7);
+	border-color: #007bff;
 	border-style: solid;
 	display: block;
 	float: right;
@@ -522,7 +522,8 @@ label {
 
 .menuoptions li a:hover {
 	display: block;
-	background: rgba(0,119,0,0.3);;
+	background: #000080;
+	color: snow;
 }
 
 .import_label {
